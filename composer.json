@@ -1,0 +1,13 @@
+{
+    "name":"tginn/hello",
+    "authors":[
+                {
+                    "name":"Ted Ginn",
+                    "email":"tginn@mail.greenriver.edu"
+                }
+              ],
+    "require":
+    {
+        "bcosca/fatfree-core":"dev-master"
+    }
+}

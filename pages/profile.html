@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <title>Dating Website</title>
+        <meta name="description" content="Week Two Assignment">
+        <meta name="author" content="Ted Ginn">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4ucrossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/styles.css">
+<!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+        <link rel="shortcut icon" href="">
+    </head>
+    
+    <body>
+<!-- Place your content here -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">My Dating Website</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="./home.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div style="margin: 20px">
+    <div class="container-fluid" style="border:1px solid #cecece;">
+    <div style="margin: 30px">
+    <div class="row">
+        <h1><strong>Profile</strong></h1>
+        
+        <hr>
+        
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" type="text" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="state"><b>State</b></label>
+                <select class="form-control" name="state">
+                    <option>Choose State...</option>
+                    <option>Arizona</option>
+                    <option>California</option>
+                    <option>Washington</option>
+                    <option>Oregon</option>
+                    <option>Idaho</option>
+                </select><br>
+                <h5><b>Seeking</b></h5>
+                <label class="radio-inline">
+                    <input type="radio" name="seeking" value="male"> Male</label>
+                <label class="radio-inline">
+                    <input type="radio" name="seeking" value="female"> Female</label>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label>Biography</label>
+        	<textarea class="form-control" name="biography" rows="6" class="form-control"></textarea>
+        </div>
+    
+    </div>
+    <div class="row">             
+        <div class="text-right">
+            <a href="./interest.html" type="submit" class="btn btn-primary btn-lg">Next ></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </body>
+</html>

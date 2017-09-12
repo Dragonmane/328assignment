@@ -36,16 +36,128 @@
     </nav>
     
     <div style="margin: 20px">
-    <div class="container-fluid" style="border:1px solid #cecece;">
-    <div style="margin: 30px">
-    <div class="row">
-        <h1><strong>Interests</strong></h1>
-        
-    <hr>
-    
-    </div>
-    </div>
-    </div>
+        <div class="container-fluid" style="border:1px solid #cecece;">
+            <div style="margin: 30px">
+                <div class="row">
+                <h1><strong>Interests</strong></h1>
+                    
+                <hr>
+                
+                <h3>In-door Interests</h3>
+                <section class="col-sm-3">
+                    <form action="./summary" method="post" class="form-horizontal">
+                    <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="indoor[]" value="tv">
+                                tv
+                            </label>
+                    </div>
+                    <div class="checkbox"  id="puzzles">
+                        <label>
+                            <input type="checkbox" name="indoor[]" value="puzzles">
+                            puzzles
+                        </label>
+                    </div>
+                </section>
+                <section class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="indoor[]" value="movies">
+                            movies
+                        </label>
+                    </div>
+                     <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="indoor[]" value="reading">
+                            reading
+                        </label>
+                     </div>
+                </section>
+                <section class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"name="indoor[]" value="cooking">
+                            cooking
+                        </label>
+                    </div>
+                     <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="indoor[]" value="playingCards">
+                            playing cards
+                        </label>
+                     </div>
+                </section>
+                <section class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="indoor[]" value="boardGames">
+                            board games
+                        </label>
+                    </div>
+                     <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="indoor[]" value="videoGames">
+                            video games
+                        </label>
+                     </div>
+                </section>	
+                </div>
+                <div class="row" style="margin: 30px">             
+                    <div class="text-right">
+                        <a href="./interest.html" type="submit" class="btn btn-primary btn-lg">Next ></a>
+                    </div>
+                </div>
+            </div>
+        <div class="container-fluid">
+            <div class="row">
+                <h3>Out-door Interests</h3>
+                <section class="col-sm-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="outdoor[]" value="hiking">
+                                hiking
+                            </label>
+                        </div>
+                         <div class="checkbox"  name="outdoor[]" value="walking">
+                            <label>
+                                <input type="checkbox">
+                                walking
+                            </label>
+                         </div>
+                </section>
+                <section class="col-sm-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="outdoor[]" value="biking">
+                                biking
+                            </label>
+                        </div>
+                         <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="outdoor[]" value="climbing">
+                                climbing
+                            </label>
+                         </div>
+                </section>
+                <section class="col-sm-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="outdoor[]" value="swimming">
+                                swimming
+                            </label>
+                        </div>
+                </section>
+                <section class="col-sm-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="outdoor[]" value="collecting">
+                                collecting
+                            </label>
+                        </div>
+                </section>  
+            </div>
+        </div>
+        </div>
     </div>
     </body>
 </html>

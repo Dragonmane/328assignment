@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <title>Dating Website Summary</title>
+        <meta name="description" content="Week Two Assignment">
+        <meta name="author" content="Ted Ginn">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4ucrossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/styles.css">
+<!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+        <link rel="shortcut icon" href="">
+    </head>
+    
+    <body>
+<!-- Place your content here -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./home">My Dating Website</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="./home">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div style="margin: 20px">
+        <div class="container-fluid" style="border:1px solid #cecece;">
+            <div style="margin: 30px">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <ul class="list-group">
+                            <li class="list-group-item">Name: <?=$name?></li>
+                            <li class="list-group-item">Gender: <?=$gender?> </li>
+                            <li class="list-group-item">Age: <?=$age?></li>
+                            <li class="list-group-item">Phone: <?=$phone?></li>
+                            <li class="list-group-item">Email: <?=$email?></li>
+                            <li class="list-group-item">State: <?=$state?></li>
+                            <li class="list-group-item">Seeking: <?=$seeking?></li>
+                            <li class="list-group-item">Indoor Interests: <?= implode(", ", $indoor) ?></li>
+                            <li class="list-group-item">Outdoor Interests: <?= implode(", ", $outdoor) ?></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6">
+                        <!-- Profile Picture-->
+                        <img style="width:100%; height: auto;" src="data:image/jpeg;base64,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" class="img-rounded" alt="Two people">
+                        <!-- Bio paragraph -->
+                        <div class="lead">
+                            Biography
+                        </div>
+                        <p class="text-center">
+                            <?=$biography?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </body>
+</html>

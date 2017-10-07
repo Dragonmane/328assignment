@@ -35,17 +35,16 @@
       </div>
     </nav>
     
-    <div style="margin: 20px">
+    <div style="margin: 20px"> 
+        <form action="./summary" method="post">
         <div class="container-fluid" style="border:1px solid #cecece;">
             <div style="margin: 30px">
                 <div class="row">
                 <h1><strong>Interests</strong></h1>
                     
                 <hr>
-                
                 <h3>In-door Interests</h3>
                 <section class="col-sm-3">
-                    <form action="./summary" method="post" class="form-horizontal">
                     <div class="checkbox">
                             <label>
                                 <input type="checkbox" name="indoor[]" value="tv">
@@ -104,7 +103,6 @@
                 </div>
             </div>
         <div class="container-fluid">
-            <form action="./summary" method="post">
             <div class="row">
                 <h3>Out-door Interests</h3>
                 <section class="col-sm-3">
@@ -152,14 +150,14 @@
                         </div>
                 </section>  
             </div>
-            </form>
-            <div class="row" style="margin: 30px">             
+            <div class="col-xs-12" style="margin: 30px">             
                 <div class="text-right">
-                    <a href="./summary" type="submit" class="btn btn-primary btn-lg">Next ></a>
+                    <input type="submit" class="btn btn-primary btn-lg pull-right" Value="Next >">
                 </div>
             </div>
         </div>
         </div>
+        </form>
     </div>
     </body>
 </html>
